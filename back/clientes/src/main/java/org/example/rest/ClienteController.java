@@ -15,7 +15,6 @@ import static org.springframework.http.HttpStatus.*;
 
 @RestController
 @RequestMapping("/api/cliente")
-@CrossOrigin("*")
 public class ClienteController {
 
     @Autowired
