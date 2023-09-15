@@ -1,5 +1,6 @@
 package org.example.rest;
 
+import jakarta.validation.Valid;
 import org.example.model.entity.Cliente;
 import org.example.model.entity.ServicoPrestado;
 import org.example.model.repository.ClienteRepository;
@@ -31,7 +32,7 @@ public class ServicoPrestadoController {
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public ServicoPrestado salvar( @RequestBody ServicoPrestadoDTO dto ){
+    public ServicoPrestado salvar( @RequestBody @Valid ServicoPrestadoDTO dto ){
         //LocalDate data = LocalDate.parse(dto.getData(), DateTimeFormatter.ofPattern("dd/MM/yyyy"));
 
 
