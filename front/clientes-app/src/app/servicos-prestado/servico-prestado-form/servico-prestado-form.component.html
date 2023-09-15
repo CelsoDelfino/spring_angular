@@ -8,7 +8,7 @@
     <div class="row">
       <div class="col-md-12">
         <div class="alert alert-success" role="alert" *ngIf="success == true">
-          Serviço salvo com sucesso
+          Serviço Prestado salvo com sucesso
         </div>
         <div class="alert alert-danger" role="alert" *ngFor="let erro of erros">
           {{ erro }}
@@ -53,6 +53,7 @@
     <div class="row">
       <div class="col-md-3">
         <button class="btn btn-success" type="submit"><i class="fa fa-save"></i>Salvar</button>
+        <button class="btn btn-danger ml-2" type="button" routerLink="/servico-prestado-listagem"><i class="fa fa-save"></i>Voltar</button>
       </div>
     </div>
   </form>
