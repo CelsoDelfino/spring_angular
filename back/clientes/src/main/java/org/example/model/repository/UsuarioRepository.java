@@ -1,2 +1,7 @@
-package org.example.model.repository;public interface UsuarioRepository {
+package org.example.model.repository;
+
+import org.example.model.entity.Usuario;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface UsuarioRepository extends JpaRepository<Usuario, Integer> {
 }

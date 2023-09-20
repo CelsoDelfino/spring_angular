@@ -11,12 +11,17 @@ import { ClientesModule } from './clientes/clientes.module';
 import { ClientesService } from './clientes.service';
 import { ServicosPrestadoModule } from './servicos-prestado/servicos-prestado.module';
 import { ServicosPrestadoService } from './servicos-prestado.service';
+import { LoginComponent } from './login/login.component';
+import { FormsModule } from '@angular/forms';
+import { LayoutComponent } from './layout/layout.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
+    LoginComponent,
+    LayoutComponent,
   ],
   imports: [
     BrowserModule,
@@ -24,7 +29,8 @@ import { ServicosPrestadoService } from './servicos-prestado.service';
     AppRoutingModule,
     TemplateModule,
     ClientesModule,
-    ServicosPrestadoModule
+    ServicosPrestadoModule,
+    FormsModule
   ],
   providers: [
     ClientesService,
